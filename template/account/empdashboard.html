@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>KSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.col-25 {
+  float: left;
+  width: 10%;
+  margin-top: 6px;
+}
+
+
+.col-75 {
+  float: left;
+  width: 90%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+    </head>
+
+    <body>
+        <center>
+            <h1>Welcome to Dashboard</h1>
+            <p>SELECT Options</p>
+        </center>
+      <div class="row">   
+        <div class="row">
+            <div class="col-25">
+                <label for="id_first_name">Create New Ticket :</label>
+            </div>
+            <div class="col-75">
+                <a href="{% url 'ticket' %}" style="background-color: white;border: 2px solid black;color: green;padding: 5px 10px;text-align: center;display: inline-block;font-size: 20px;margin: 10px 30px;cursor: pointer;text-decoration:none;" >Create New Ticket</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+                <label for="id_first_name">Check ticket status :</label>
+            </div>
+            <div class="col-75">
+                <a href="{% url 'status' %}" style="background-color: white;border: 2px solid black;color: green;padding: 5px 10px;text-align: center;display: inline-block;font-size: 20px;margin: 10px 30px;cursor: pointer;text-decoration:none;" >Check ticket status</a>
+            </div>
+          </div>
+      </div>
+    </body>
+</html>

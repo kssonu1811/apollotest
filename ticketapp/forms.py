@@ -1,0 +1,7 @@
+from .models import Contact
+from django import forms
+
+class Ticketform(forms.ModelForm):
+    class Meta:
+        model = Contact
+        fields = "__all__"

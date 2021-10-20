@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>KSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+
+    <body>
+        <center>
+            <h1>GENERATE TICKET</h1>
+            <p>Create Ticket and after executain of our Admin team Ticket will Update</p>
+        </center>
+
+        {% if registered %}
+        <center>
+        <strong>thank you for Ticket generating!</strong>
+        <a href="{% url 'empdashboard' %}">Return to the Employee Dashboard.</a><br />
+        </center>
+        {% else %}
+        <form method="POST" novalidate>
+
+            {% csrf_token %}
+            {{ticket_form}}
+            <input type="submit" value="Submit">
+        </form>
+      {% endif %}
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>KSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+
+    <body>
+        <center>
+            <h1>REGISTER TO YOUR ACCOUNT</h1>
+            <p>Create an account and after executain of our team you can login Your ID </p>
+        </center>
+
+        {% if registered %}
+        <center>
+        <strong>thank you for registering!</strong>
+        <a href="{% url 'login' %}">Return to the login page.</a><br />
+        </center>
+        {% else %}
+            
+
+        <form method="POST" novalidate>
+
+            {% csrf_token %}
+            {{user_form}}
+            <input type="submit" value="Submit">
+        </form>
+      {% endif %}
+    </body>
+</html>

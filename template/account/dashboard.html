@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>KSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.col-25 {
+  float: left;
+  width: 10%;
+  margin-top: 6px;
+}
+
+
+.col-75 {
+  float: left;
+  width: 90%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+    </head>
+
+    <body>
+        <center>
+            <h1>Welcome to Dashboard</h1>
+            <p>SELECT Options</p>
+        </center>
+      <div class="row">   
+        <div class="row">
+            <div class="col-25">
+                <label for="id_first_name">Register Employee :</label>
+            </div>
+            <div class="col-75">
+                <a href="{% url 'register' %}" style="background-color: white;border: 2px solid black;color: green;padding: 5px 10px;text-align: center;display: inline-block;font-size: 20px;margin: 10px 30px;cursor: pointer;text-decoration:none;" >Employee SignUp</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+                <label for="id_first_name">Employee Login :</label>
+            </div>
+            <div class="col-75">
+                <a href="{% url 'login' %}" style="background-color: white;border: 2px solid black;color: green;padding: 5px 10px;text-align: center;display: inline-block;font-size: 20px;margin: 10px 30px;cursor: pointer;text-decoration:none;" >Employee Login</a>
+            </div>
+          </div>
+      </div>
+    </body>
+</html>

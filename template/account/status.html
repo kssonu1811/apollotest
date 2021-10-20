@@ -1,0 +1,43 @@
+
+ <div class="container">
+    <center>
+	<div>
+            <h1>Welcome to <span>Status Bar :</span></h1>
+            <p>Here we provide all detail about Booked Ticket</p>
+        </div>
+    </center>
+    <center>
+	<table>
+	  <thead style="background-color: mediumspringgreen;">
+		<tr>
+		  <th scope="col">Serial No</th>
+		  <th scope="col">Full Name</th>
+		  <th scope="col">Location</th>
+		  <th scope="col">Address</th>
+          <th scope="col">Email</th>
+          <th scope="col">Status</th>
+          <th scope="col">created_date</th>
+		</tr>
+	  </thead>
+      {% for tickets in tickets %}
+	  <tbody>
+		<tr>
+		  <th scope="row">{{tickets.id}}</th>
+		  <td >{{tickets.first_name}} {{tickets.last_name}}</td>
+		  <td >{{tickets.city}} {{tickets.state}}</td>
+		  <td >{{tickets.address}}</td>
+		  <td >{{tickets.email}}</td>
+          <td >{{ticket.status}}</td>
+		  <td >{{tickets.created_date}}</td>
+		</tr>
+	  </tbody>
+      {% endfor %}
+	</table>
+    </center>
+    <center>
+    <div>
+        <a href="{% url 'ticket' %}" style="background-color: white;border: 2px solid black;color: green;padding: 5px 10px;text-align: center;display: inline-block;font-size: 20px;margin: 10px 30px;cursor: pointer;text-decoration:none;" >Add New ticket</a>
+    </div>
+    </center>
+    <div><p> </p></div>
+</div>
