@@ -1,0 +1,106 @@
+[
+{
+    "model": "sessions.session",
+    "pk": "a3xw9y1junwcqx9rpfre2c69z1mdp1y9",
+    "fields": {
+        "session_data": ".eJxVjMEOwiAQRP-FsyFFWCQevfsNZJddpGogKe2p8d9tkx70Mod5b2ZVEZe5xKXLFEdWV2XU6bcjTC-pO-An1kfTqdV5Gknvij5o1_fG8r4d7t9BwV62NRjykHDLIIzCCQcBcuCEOKBDb4dzEMs2XDyxo0wwUNrkbEAcZPX5AhDyORY:1md6Pd:TeXnzU1f1CfMBpqZxxXZDtH3nFTzY6pWAgzgggmging",
+        "expire_date": "2021-11-03T07:53:25.703Z"
+    }
+},
+{
+    "model": "apolloapp.user",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$gfU93ggkTEwR0N3Rz6m6gq$PEjrMZGQqkQOR8tyHFc/cV6C37kGcBjboHdopPrPxsA=",
+        "last_login": "2021-10-20T07:53:25.696Z",
+        "is_superuser": true,
+        "username": "kumar",
+        "email": "ksajansonu@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-10-20T07:52:45.798Z",
+        "is_Employee": false,
+        "first_name": "",
+        "last_name": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "apolloapp.user",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$VHRUYkNPg34bgsP3h9Xpmv$JIqgtxucLVReAINCOXBq2SLAylzzamzsmNdm7WfYhTo=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "anshupriya",
+        "email": "ksajansonu@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-10-20T20:48:43.428Z",
+        "is_Employee": false,
+        "first_name": "SAJAN",
+        "last_name": "KUMAR",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "apolloapp.user",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$qsKiqcpYjaof3VStwbLibn$6qBPMqhZMhdwlwT7kFOGyOlzcNEpaKlA+D2aye6+Xlo=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "ksajansonu",
+        "email": "ksajansonu@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-10-20T21:00:10.002Z",
+        "is_Employee": false,
+        "first_name": "SAJAN",
+        "last_name": "KUMAR",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "apolloapp.user",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$F6mJfhSyVr2pH2OUfx980A$VM4FfqVDy6a0ek9B3/EGYhwOUDgLC8QCJpFUkfTBNnk=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "ksajanso",
+        "email": "ksajansonu@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-10-20T21:04:55.064Z",
+        "is_Employee": false,
+        "first_name": "SAJAN",
+        "last_name": "KUMAR",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "apolloapp.employee",
+    "pk": 1,
+    "fields": {
+        "phone_number": "8295250119",
+        "designation": "hello"
+    }
+},
+{
+    "model": "apolloapp.employee",
+    "pk": 12,
+    "fields": {
+        "phone_number": "+918295250119",
+        "designation": "hello"
+    }
+},
+{
+    "model": "ticketapp.contact",
+    "pk": 48,
+    "fields": {
+        "First_name": "SAJAN",
+        "last_name": "KUMAR",
+        "email": "ksajansonu@gmail.com",
+        "city": "bhagalpur",
+        "state": 
